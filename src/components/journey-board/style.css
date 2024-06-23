@@ -1,0 +1,35 @@
+.journey-board {
+  width: 132px;
+  height: 742px;
+  border: black solid 1px;
+  border-radius: 15px;
+  border-color: #fdfdfd;
+  filter: drop-shadow(0px 2px 2px #bdbdbd);
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+.journey-board-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+.journey-board-header p{
+
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.journey-board-header img {
+  position: absolute;
+
+  right: 20px;
+
+  width: 39px;
+  height: 29px;
+}
