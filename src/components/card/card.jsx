@@ -1,44 +1,41 @@
-import React from 'react'
-import "./style.css"
+import React from "react";
+import "./style.css";
 import info_icon from "../../assests/info.png";
-import upper_arror from "../../assests/upper-arrow.png"
-import group_icon from "../../assests/Group-Icon.png"
-import down_icon from "../../assests/down-arrow.png"
-import plus_icon from "../../assests/plus.png"
-import undo_icon from "../../assests/undo.png"
-import redo_icon from "../../assests/redo.png"
-import expand_icon from "../../assests/expand.png"
+import upper_icon from "../../assests/upper-arrow.png";
+import group_icon from "../../assests/Group-Icon.png";
+import down_icon from "../../assests/down-arrow.png";
+import plus_icon from "../../assests/plus.png";
+import undo_icon from "../../assests/undo.png";
+import redo_icon from "../../assests/redo.png";
+import expand_icon from "../../assests/expand.png";
 import { PiDotsThreeBold } from "react-icons/pi";
 import { BsThreeDots } from "react-icons/bs";
 
-
-
-
 const Card = (props) => {
-  const {type} = props;
+  const { type } = props;
 
   return (
     <div className="cards">
-          <div className="card-header">
-            <p >Technical Project Management</p>
-            <img src={info_icon} alt="" className="info-icon" />
-          </div>
-          <div className="card-description">
-            <p className="description-title">Description </p>:
-            <p className="description">
-              Story of Alignment Scope of Agility Specific Accountable
-              Staggering Approach
-            </p>
-          </div>
-          <div className='types'>
-          {/* {type === "video" && (
+      <div className="card-header">
+        <p>Technical Project Management</p>
+        <img src={info_icon} alt="" className="info-icon" />
+      </div>
+      <div className="card-description">
+        <p className="description-title">Description </p>:
+        <p className="description">
+          Story of Alignment Scope of Agility Specific Accountable Staggering
+          Approach
+        </p>
+      </div>
+      <div className="types">
+        {type === "video" && (
           <div className="video-container">
           </div>
-        )} */}
-        {/* {type === "threadbuilder" && (       
+        )}
+        {type === "threadbuilder" && (       
         <div className="threadbuilder">    
           <div className='thredbuilder-heading'>
-            <img src={upper_arror} alt=""  />
+            <img src={upper_icon} alt=""  />
             <p>Thread A</p>
             </div>        
             <div  className='threadbuilder-container'>
@@ -75,8 +72,8 @@ const Card = (props) => {
             </div>
            
           </div>
-           )} */}
-           {/* { type === "article" && (           
+           )}
+        { type === "article" && (           
            <div className='pointers'>
             <div className='pointer-title-container'>
               <p>Title</p>
@@ -117,10 +114,40 @@ const Card = (props) => {
             </div>
 
            </div>
-           )} */}
+           )}
+           { type === "articles" && (
+
+           
+        <div className="method">
+          <div className="method-introduction">
+            <img src={upper_icon} alt="" />
+            <p>Introduction </p>
+          </div>
+          <p className="introduction-p">
+            The 4SA Method , How to bring a idea into progress ?
+          </p>
+          <p className="see-more">See More</p>
+          <div className="method-thread">
+            <img src={upper_icon} alt="" />
+            <p>Thread A </p>
+          </div>
+          <p className="thread-p">
+            How are you going to develop your stratergy ? Which method are you
+            going to use to develop a stratergy ? What if the project is
+            lengthy?
+          </p>
+          <p className="see-more second">See More</p>
+          <div className="method-example-wrapper">
+          <div className="method-example">
+            <p>Example 1</p>
+          </div>
+          <p className="method-example-p">You have a concept , How will you put into progress?</p>
           </div>
         </div>
-  )
-}
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default Card;

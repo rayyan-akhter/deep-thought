@@ -4,7 +4,13 @@ main {
   padding-right: 187px;
   font-family: "Poppins", sans-serif;
   padding-bottom: 191px;
-
+  position: relative;
+}
+img{
+  cursor: pointer;
+}
+li{
+  cursor: pointer;
 }
 .title {
   display: flex;
@@ -45,6 +51,14 @@ main {
 .topic p{
     font-size: 14px;
 }
+.main-icon-container{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  position: absolute;
+  right: 71px;
+  bottom: 40px;
+}
 .card-container{
     display: grid;
     gap: 52px;
@@ -52,4 +66,21 @@ main {
     padding-left: 27px;
     padding-right: 27px;
     padding-top:75px ;
+}
+
+.card-main-icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+}
+.blue-icon{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.main-icon{
+  position: absolute;
 }
