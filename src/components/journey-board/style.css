@@ -46,6 +46,10 @@
 .journey-board-main{
  
   padding: 21px 51px 0px 32px;
+  transition: opacity 0.4s ease-in-out;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 .journey-board-main-heading{
   display: flex;
@@ -53,7 +57,10 @@
   padding-left: 32px;
   font-size: 16px;
   font-weight: 700;
-  padding-bottom: 20px
+  padding-bottom: 20px;
+  
+
+
 
 }
 .journey-board-main-title{
@@ -64,4 +71,6 @@
   height: 110px;
   font-size: 16px;
   font-weight: 400;
+
+
 }
